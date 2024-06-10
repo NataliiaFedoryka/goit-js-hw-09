@@ -52,7 +52,7 @@ function saveToLocalStorage(key, value) {
   });
   
   feedbackFormEl.addEventListener('input', event => {
-    // отримати значення з полів
+    
     let usermail = feedbackFormEl.elements.email.value;
     let usermessage = feedbackFormEl.elements.message.value;
   
@@ -63,7 +63,7 @@ function saveToLocalStorage(key, value) {
     formData.email = usermail;
     formData.message = usermessage;
   
-    // додати об'кт у localStorage
+    
     saveToLocalStorage(feedbackFormState, formData);
   });
   
@@ -80,3 +80,7 @@ function saveToLocalStorage(key, value) {
     formData.email = parseData.email;
     formData.message = parseData.message;
   }
+  // Описаний в документації
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
