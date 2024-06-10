@@ -1,35 +1,82 @@
 /* Reset styles */
+/* Reset styles */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  margin: 0;
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
+ul,
+ol,
+li {
   list-style: none;
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+  color: currentColor;
 }
 
 button {
+  background-color: inherit;
   cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+/* ----------------------------------- */
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.container {
+  height: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
 }
